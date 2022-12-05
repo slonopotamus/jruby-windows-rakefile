@@ -18,6 +18,7 @@ jobs:
           'jruby-9.2.18',
           'jruby-9.2.19',
           'jruby-9.2.20',
+          'jruby-9.2.21',
           'jruby-9.3.0',
           'jruby-9.3.1',
           'jruby-9.3.2',
@@ -38,4 +39,4 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
-      - run: bundle install
+          bundler-cache: true
